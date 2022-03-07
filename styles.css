@@ -16,10 +16,12 @@ h1{
     padding: 0.5em 0;
     margin: 0 0 1em 0;
 
-    img { width: 70%; 
-           height: 50% }
-
-
+    img.thumbnail {
+        float: right; 
+        width: 50%;
+        height: auto;
+        margin: 0 0 1em 1em;
+    }
 
 
 h2 {
@@ -36,34 +38,3 @@ h2 {
     max-width: 800px;
     margin: 1em auto 1em auto;
 }
-
-
-#wing-fest {
-    box-shadow: 5px 5px 10px red;
-}
-
-.season {
-    border: 1px solid blue;
-    padding: 1em 1em 1em 1em;
-    margin: 1.5em 0 1.5em 0;
-    border-radius: 10px;
-}
-
-.event {
-    border: 1px solid gray;
-    background-color: white;
-    padding: 1em 2em 1em 2em;
-    margin: 1.25em 0 1.25em 0;
-    border-radius: 10px;
-}
-
-
-
-.season-winter {background-color:aquamarine;}
-.season-spring {background-color: azure;}
-.season-summer {background-color: blanchedalmond;}
-.season-autumn {background-color: aqua;}
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
