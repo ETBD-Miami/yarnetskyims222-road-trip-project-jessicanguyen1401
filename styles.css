@@ -1,13 +1,15 @@
 
 
-
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital@1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
 
 h1{
-    background-color: #FFBF00;
-    color: white;
+    background-color: bisque;
+    color: cadetblue;
     text-align: left;
     font-weight: bold;
-    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-family: "Work Sans",sans-serif;
     font-size: 55px; 
     font-style: Normal; 
     font-variant: normal; 
@@ -18,7 +20,7 @@ h1{
 
     img { width:60%;
     height: 30%;
-    text-align: center;}
+    alignment: center;}
 
 
 h2 {
@@ -45,3 +47,4 @@ color:gray;
 #style1 {
 
 }
+container{}
