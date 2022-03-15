@@ -47,6 +47,12 @@
         <img src="images/saigon-index page.jpeg" style="width:100%">
         <div class="text">Saigon Square</div>
       </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 3</div>
+        <img src="images/into-the-wave-hoian-rehahn-lifestyle-photo-vietnam.jpeg" style="width:100%">
+        <div class="text">Into The Wave</div>
+      </div>
     
       <!-- Next and previous buttons -->
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -82,19 +88,28 @@
     <div class="stories and highlihgts">
         <h2>Stories and Highlights</h2>
         
-          <h3><a href="https://theculturetrip.com/asia/vietnam/articles/11-reasons-to-visit-ho-chi-minh-city-vietnam/">11 Reasons To Visit Ho Chi Minh City</a></h3>
+        <button class="accordion">11 Reasons To Visit Ho Chi Minh City</button>
+<div class="panel">
+  <h3><a href="https://theculturetrip.com/asia/vietnam/articles/11-reasons-to-visit-ho-chi-minh-city-vietnam/">11 Reasons To Visit Ho Chi Minh City</a></h3>
           <p>Brash, wild, exhilarating and a little bit lawless, Ho Chi Minh City has flourished into one of the crown jewels of Southeast Asia. Bangkok may still be better traveled and Hanoi arguably more historic, but this city, with its booming economy, terrific nightlife and dizzying energy, is like no other. Here are 11 reasons to pack your bags and head east.
 
           </p>
-    
+</div>
 
-          <h3><a href="https://www.lonelyplanet.com/articles/hotel-quarantine-survival">How I Survived A 15-day Hotel Quarantine</a></h3>
-          <p>With more countries introducing mandatory hotel quarantine for travelers arriving from other countries, one writer, who has just completed a 15-day hotel quarantine in Vietnam, shares her tips on how to get through it.</p>
+<button class="accordion">Top 10 Best Beaches in Vietnam</button>
+<div class="panel">
+  <h3><a href="https://www.lonelyplanet.com/articles/best-beaches-vietnam">Top 10 Best Beaches in Vietnam</a></h3>
+  <p>Vietnam might not have the reputation of its Southeast Asian neighbours when it comes to leaning palms and turquoise waters, but its 3400km of coast hides its fair share of resplendent beaches - not to mention the handful of tropical, coral-ringed islands bobbing off shore. Whether you're looking for a stretch of sand near one of the country's buzzing cities, a spot suitable for families, or a quiet cove to escape the crowds, here's our pick of the best beaches in Vietnam.</p>
+</div>
 
-          <h3><a href="https://www.lonelyplanet.com/articles/how-to-live-like-a-local-in-ho-chi-minh-city">How To Live Like A Local In Ho Chi Minh City</a></h3>
+<button class="accordion">How To Live Like A Local In HCMC</button>
+<div class="panel">
+  <h3><a href="https://www.lonelyplanet.com/articles/how-to-live-like-a-local-in-ho-chi-minh-city">How To Live Like A Local In Ho Chi Minh City</a></h3>
 
-          <p>Lonely Planet Local James Pham has lived in Ho Chi Minh City for six years. Born in Vietnam but raised in the West, James ostensibly returned to HCMC (aka Saigon) to rediscover his roots but in reality eats a massive amount of street food. Puttering about on his scooter, he spends his days searching out whatever the next 'best’ thing is</p>
-          
+  <p>Lonely Planet Local James Pham has lived in Ho Chi Minh City for six years. Born in Vietnam but raised in the West, James ostensibly returned to HCMC (aka Saigon) to rediscover his roots but in reality eats a massive amount of street food. Puttering about on his scooter, he spends his days searching out whatever the next 'best’ thing is</p>
+</div>
+
+        
     </div>
         
         <footer>
@@ -150,8 +165,28 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
       </script>
-
 </main>
-</body>
 
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
 </html>
