@@ -98,17 +98,20 @@ p{font-size: 20px;
   font-family: "Spectral", serif;
   margin: 0.25em 0.5em 0.25em 0.5em;}
 
-.intro{margin: 1em 18em 1em 1em;
+.intro{margin: 1em auto 1em auto;
+  margin: 0em 0em;
   font-family: "Work Sans", sans-serif;}
 
-
+.things-to-know{background-color:cadetblue;
+margin: 1em 0em;
+border-radius:10px;
+color: white;}
 
 .map{width: 100%;
   height: auto;
   display: block;
   margin: 1em auto;
 }
-
 
 
 img { width:100%;
