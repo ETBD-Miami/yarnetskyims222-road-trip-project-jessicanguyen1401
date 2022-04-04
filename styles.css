@@ -14,7 +14,7 @@ main.container {
   background-color: white;
   box-shadow: 3px 3px 15px #001f33;
   border-radius: 10px;
-  opacity: 82%;
+  background-color: rgba(255, 255, 255, 0.822);
 }
 nav {
   padding:0;
@@ -82,16 +82,18 @@ h1{
 h2 {
     background-color: bisque;
     color: cadetblue;
+    font-size: 24px;
     text-align: left;
     border-radius: 10px;
     padding: 1em 1em;
-    margin: 0.25em 0 1em 0
+    margin: 0.25em 0 1em 0;
+    font-family: 'Playfair Display', serif;
     }
 
 h3{
     color: #174577;
     text-decoration:dotted;
-    text-transform: bold;
+    font-weight: bold;
 }
 
 p{font-size: 20px;
@@ -117,7 +119,7 @@ color: white;}
 img { width:100%;
   height: auto;
   display:block;
-  margin 1.5em auto;
+  margin: 1.5em auto;
   }
 
 
@@ -240,7 +242,7 @@ img { width:100%;
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
   background-color: cadetblue;
-  text-color: white;
+  color: white;
 }
 
 /* Style the accordion panel. Note: hidden by default */
